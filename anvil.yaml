@@ -19,6 +19,14 @@ db_schema:
       type: datetime
     server: full
     title: Feedback
+  table_2:
+    client: none
+    columns:
+    - admin_ui: {order: 0, width: 200}
+      name: '123'
+      type: string
+    server: full
+    title: Table 2
 dependencies: []
 exported_table_schema:
 - client: none
