@@ -32,11 +32,12 @@ class HomeForm(HomeFormTemplate):
     # First, we grab the contents of the text boxes:
     name = self.name_box.text
     email = self.email_box.text
+    email2 = self.text_box_1.text
     feedback = self.feedback_box.text
 
     # Now we call our Server Module to save our input
     # in the database and send you an email:
-    anvil.server.call("add_feedback", name, email, feedback)
+    anvil.server.call("add_feedback", name, email,email2, feedback)
     # (Hint: Find ServerModule1 under "Server Code" on the
     # left. Click on the folder icon if you can't see it.)
 
